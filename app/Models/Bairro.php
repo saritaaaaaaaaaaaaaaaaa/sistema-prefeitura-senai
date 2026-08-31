@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bairro extends Model
 {
-    protected $filable = ['nome'];
+    protected $fillable = ['nome'];
 
     public function projetos()
     {

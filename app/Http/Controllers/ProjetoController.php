@@ -41,7 +41,8 @@ class ProjetoController extends Controller
             ]);
 
 
-        $projeto = Projeto::create($request->all());
+        Projeto::create($request->all());
+
         $projeto = Projeto::create($request->all());
         $projeto->bairros()->sync($request->bairros);
           

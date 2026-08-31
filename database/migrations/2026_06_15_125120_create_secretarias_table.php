@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('secretarias', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->string('telefone')->nullable();
+            $table->string('endereco')->nullable();
             $table->timestamps();
         });
     }

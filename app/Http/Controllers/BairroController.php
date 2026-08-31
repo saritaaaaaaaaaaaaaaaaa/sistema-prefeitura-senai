@@ -57,7 +57,7 @@ class BairroController extends Controller
     public function update(Request $request, Bairro $bairro)
     {
         $request->validate(['nome' => 'required']);
-        $bairro->update($request->all());
+        $bairro->update($request->validated());
         return redirect()->route('bairros.index')->with('success', 'Bairro atualizado com sucesso.');
     }
 
